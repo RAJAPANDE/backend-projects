@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const mongoUri = process.env.MONGO_URI;
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const userRoutes = require('./routes/userRoutes');
