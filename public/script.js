@@ -4,7 +4,7 @@ document.getElementById('userForm').addEventListener('submit', async function (e
     const user = Object.fromEntries(formData.entries());
   
     try {
-      const response = await fetch('http://localhost:7000/api/users', {
+      const response = await fetch('https://backend-projects-sscs.onrender.com', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(user),
